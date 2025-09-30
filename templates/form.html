@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untitled form</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f5f3f7;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+    max-width: 480px;
+    margin: 16px 0;
+  }
+  .header {
+    background: #fff;
+    border-top: 6px solid #673ab7;
+    padding: 16px;
+    margin: 12px auto;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+    max-width: 300px;
+  }
+  .header h1 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 500;
+  }
+  .email {
+    font-size: 14px;
+    color: #555;
+    margin: 4px 0;
+  }
+  .switch-account {
+    color: #1a73e8;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .not-shared {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  .question-card {
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px auto;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+  }
+  .question-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  label {
+    display: block;
+    margin: 6px 0;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+  .buttons-outside {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    max-width: 300px;  /* match the question cards */
+    margin: 0 auto;    /* center buttons below cards */
+  }
+  button {
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .clear-form {
+    color: #673ab7;
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .footer {
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    margin-top: 16px;
+    padding-bottom: 8px;
+  }
+  .google-forms {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 8px 0;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Project</h1>
+    <a class="switch-account" href="/index1">Sign in to Google</a> <a class="email">to save your progress. </a>
+    <a class="switch-account" href="/index1">Learn more</a>
+  </div>
+
+  <!-- Questions each in separate white card -->
+  <div class="question-card">
+    <div class="question-title">1. Which type of art do you enjoy the most?</div>
+    <label><input type="radio" name="q1">Painting</label>
+    <label><input type="radio" name="q1">Music</label>
+    <label><input type="radio" name="q1">Dance</label>
+  </div>
+
+  <div class="question-card">
+    <div class="question-title">2. How often do you visit an art gallery or museum?</div>
+    <label><input type="radio" name="q2">Once a month</label>
+    <label><input type="radio" name="q2">Once a year</label>
+    <label><input type="radio" name="q2">Rarely</label>
+  </div>
+
+  <div class="question-card">
+    <div class="question-title">3. Your favorite kind of music?</div>
+    <label><input type="radio" name="q3">Classical</label>
+    <label><input type="radio" name="q3">Pop</label>
+    <label><input type="radio" name="q3">Folk/Regional</label>
+  </div>
+
+  <div class="question-card">
+    <div class="question-title">4. Which type of literature do you prefer?</div>
+    <label><input type="radio" name="q4">Poetry</label>
+    <label><input type="radio" name="q4">Short stories</label>
+    <label><input type="radio" name="q4">Novels</label>
+  </div>
+
+  <div class="question-card">
+    <div class="question-title">5. How do you usually spend your free time?</div>
+    <label><input type="radio" name="q5">Sketching/Drawing</label>
+    <label><input type="radio" name="q5">Listening to music</label>
+    <label><input type="radio" name="q5">Watching movies/plays</label>
+  </div>
+
+  <div class="question-card">
+    <div class="question-title">6. Which social media platform do you use for art inspiration?</div>
+    <label><input type="radio" name="q6">Instagram</label>
+    <label><input type="radio" name="q6">YouTube</label>
+    <label><input type="radio" name="q6">Pinterest</label>
+  </div>
+
+  <div class="question-card">
+    <div class="question-title">7. Favorite type of visual art?</div>
+    <label><input type="radio" name="q7">Digital art</label>
+    <label><input type="radio" name="q7">Traditional painting</label>
+    <label><input type="radio" name="q7">Photography</label>
+  </div>
+
+  <div class="question-card">
+    <div class="question-title">8. Do you prefer group art activities or solo work?</div>
+    <label><input type="radio" name="q8">Group activities</label>
+    <label><input type="radio" name="q8">Solo work</label>
+    <label><input type="radio" name="q8">Depends on mood</label>
+  </div>
+
+  <div class="question-card">
+    <div class="question-title">9. How often do you watch plays, dance shows, or cultural performances?</div>
+    <label><input type="radio" name="q9">Frequently</label>
+    <label><input type="radio" name="q9">Sometimes</label>
+    <label><input type="radio" name="q9">Rarely</label>
+  </div>
+
+  <div class="question-card">
+    <div class="question-title">10. Which art supply do you use most?</div>
+    <label><input type="radio" name="q10">Sketchbook & pencils</label>
+    <label><input type="radio" name="q10">Paints & brushes</label>
+    <label><input type="radio" name="q10">Clay or craft materials</label>
+  </div>
+
+  <!-- Buttons outside all cards -->
+  <div class="buttons-outside">
+    <button onclick="rickroll()">Submit</button>
+    <button class="clear-form" onclick="clearForm()">Clear Form</button>
+  </div>
+
+  <div class="footer">
+    This content is created by Google. -
+    <a href="#">Contact form owner</a> -
+    <a href="#">Terms of Service</a> -
+    <a href="#">Privacy Policy</a>
+    <div class="google-forms">
+	<svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40" fill="none">
+  <!-- Purple Forms Icon -->
+  <rect x="5" y="5" width="30" height="30" rx="6" fill="#673AB7"/>
+  <path fill="#fff" d="M14 13h12c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H14c-1.1 0-2-.9-2-2V15c0-1.1.9-2 2-2zm1.5 3v2h9v-2h-9zm0 4v2h9v-2h-9zm0 4v2h6v-2h-6z"/>
+  
+  <!-- "Google Forms" text -->
+  <text x="37" y="28" font-family="Arial, sans-serif" font-size="18" fill="#5F6368">
+    Google Forms
+  </text>
+</svg>
+
+    </div>
+  </div>
+</div>
+
+<script>
+function rickroll() {
+  window.location.href = "/index1";
+}
+
+function clearForm() {
+  if(confirm("Are you sure you want to clear the form?")) {
+    document.querySelectorAll('input[type="radio"]').forEach(r => r.checked = false);
+  }
+}
+</script>
+</body>
+</html>
